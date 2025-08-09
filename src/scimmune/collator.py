@@ -63,7 +63,7 @@ def binning(
         binned_row = _digitize(row, bins)
     return torch.from_numpy(binned_row) if not return_np else binned_row.astype(dtype)
 
-class scImmuneDataCollator_DataCollator(DefaultDataCollator):
+class ScImmuneDataCollator(DefaultDataCollator):
     """
     Data collator for the mask value learning task. It pads the sequences to
     the maximum length in the batch and masks the gene expression values.
