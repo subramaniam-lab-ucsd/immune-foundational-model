@@ -8,7 +8,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class scGPT_TrainingArguments(TrainingArguments):
+class ScImmuneTrainingArguments(TrainingArguments):
     mlm_probability: Optional[float] = 0.50
     max_length: Optional[int] = 1200
     warmup_ratio_or_step: Optional[int] = 0.1
@@ -29,7 +29,7 @@ def compute_metrics(eval_pred):
     raise NotImplementedError
 
 
-class scGPT_pretrainingTrainer(Trainer):
+class ScImmunePretrainingTrainer(Trainer):
     def compute_loss(self, model, data_dict, return_outputs=False):
         # print("compute_loss")
         # unpack data dict
