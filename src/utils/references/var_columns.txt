@@ -1,7 +1,0 @@
-soma_joinid
-feature_id
-feature_name
-feature_type
-feature_length
-nnz
-n_measured_obs
