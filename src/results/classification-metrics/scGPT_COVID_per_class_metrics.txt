@@ -1,0 +1,26 @@
+== Linear probe (Logistic Regression) on X_scgpt ==
+Accuracy: 0.9504678040726472
+Macro‑F1: 0.9442431353164279
+
+Classification report:
+                                                 precision    recall  f1-score   support
+
+                                         B cell      0.997     0.997     0.997      1170
+CD14-positive, CD16-negative classical monocyte      0.977     0.972     0.974       214
+                CD4-positive, alpha-beta T cell      0.958     0.953     0.956      1934
+                CD8-positive, alpha-beta T cell      0.920     0.878     0.898      1555
+                             classical monocyte      0.986     0.965     0.975      2081
+                                lung macrophage      0.944     0.948     0.946       465
+                       mature alpha-beta T cell      0.772     0.937     0.846       206
+                            natural killer cell      0.928     0.955     0.941      1033
+                         non-classical monocyte      0.818     0.938     0.874       306
+                                    plasmablast      0.973     0.991     0.982       220
+                                       platelet      0.992     0.995     0.993       384
+                                        unknown      0.947     0.948     0.947      1334
+
+                                       accuracy                          0.950     10902
+                                      macro avg      0.934     0.956     0.944     10902
+                                   weighted avg      0.952     0.950     0.951     10902
+
+
+Confusion matrix shape: (12, 12)

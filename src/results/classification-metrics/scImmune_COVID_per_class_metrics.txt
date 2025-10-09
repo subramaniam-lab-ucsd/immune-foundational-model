@@ -1,0 +1,26 @@
+== Linear probe (Logistic Regression) on X_scimmune ==
+Accuracy: 0.9099247844432214
+Macro‑F1: 0.9072090673601557
+
+Classification report:
+                                                 precision    recall  f1-score   support
+
+                                         B cell      0.986     0.986     0.986      1170
+CD14-positive, CD16-negative classical monocyte      0.904     0.972     0.937       214
+                CD4-positive, alpha-beta T cell      0.874     0.903     0.888      1934
+                CD8-positive, alpha-beta T cell      0.808     0.704     0.753      1555
+                             classical monocyte      0.983     0.950     0.966      2081
+                                lung macrophage      0.931     0.953     0.942       465
+                       mature alpha-beta T cell      0.655     0.883     0.752       206
+                            natural killer cell      0.861     0.909     0.885      1033
+                         non-classical monocyte      0.790     0.922     0.851       306
+                                    plasmablast      0.964     0.986     0.975       220
+                                       platelet      0.967     0.979     0.973       384
+                                        unknown      0.983     0.976     0.979      1334
+
+                                       accuracy                          0.910     10902
+                                      macro avg      0.892     0.927     0.907     10902
+                                   weighted avg      0.911     0.910     0.909     10902
+
+
+Confusion matrix shape: (12, 12)
