@@ -1,4 +1,4 @@
-# Foundational Model for PBMC Single-cell RNAseq Data
+# scImmune: Foundation Model for Immune-Specific sc-RNAseq Data
 
 This repository provides code and pipelines for fine-tuning and evaluating foundational models (such as scGPT) on single-cell RNA-seq data, with a focus on cell-type annotation tasks. It includes scripts and Jupyter notebooks for data preprocessing, model training (including PEFT/LoRA), and downstream analysis/visualization.
 
