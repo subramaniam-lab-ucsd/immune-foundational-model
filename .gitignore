@@ -11,7 +11,9 @@
 **/*.json
 **/*.arrow
 **/*.pyc
-
+**/*.pth
+**/*.pt
+**/*.safetensors
 **/wandb/
 **/save/
 **/obo_models/**
