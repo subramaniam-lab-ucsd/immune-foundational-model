@@ -1,0 +1,10 @@
+normal
+B-cell acute lymphoblastic leukemia
+breast cancer
+clear cell renal carcinoma
+clonal hematopoiesis
+colorectal cancer
+common variable immunodeficiency
+COVID-19
+hematologic disorder
+HIV infectious disease
