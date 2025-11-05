@@ -3,7 +3,7 @@ from typing import Optional
 from torch import nn
 from transformers import Trainer, TrainingArguments
 import torch
-from loss import masked_mse_loss
+from .loss import masked_mse_loss
 from dataclasses import dataclass
 
 
