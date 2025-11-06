@@ -22,13 +22,31 @@ def load_ontology_graph(obo_folder, ontology_name):
     graph = obonet.read_obo(obo_path)
     return graph
 
-def save_model_and_metadata(model, outdir, ontology_name, params):
+import os
+import json
+
+def save_model_and_metadata(model, outdir, ontology_name):
+    """
+    Save a trained Node2Vec model and basic metadata.
+
+    Args:
+        model: Trained Node2Vec model (e.g. from gensim or nodevectors)
+        outdir: Directory path to save model files
+        ontology_name: String name (e.g. 'immune_cell')
+    """
     os.makedirs(outdir, exist_ok=True)
     model_path = os.path.join(outdir, f"{ontology_name}_node2vec.model")
     meta_path = os.path.join(outdir, f"{ontology_name}_node2vec_metadata.json")
+    # Save the Node2Vec model
     model.save(model_path)
+    # Extract metadata automatically from the model if available
+    metadata = {
+        "num_nodes": len(model.wv.key_to_index),
+        "embedding_dim": model.wv.vector_size,
+        "ontology": ontology_name
+    }
     with open(meta_path, "w") as f:
-        json.dump(params, f, indent=2)
+        json.dump(metadata, f, indent=2)
     print(f"Model saved to {model_path}")
     print(f"Metadata saved to {meta_path}")
 
